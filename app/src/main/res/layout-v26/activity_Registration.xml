@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity" android:id="@+id/edtLastName" android:minWidth="24dp">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="9dp"
+            android:text="Hello World!"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:id="@+id/tvHello"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="@string/registration_form"
+            android:ems="10"
+            android:id="@+id/txtRegistration"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="8dp" android:autofillHints=""
+            android:layout_marginTop="32dp" app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="32dp"
+            app:layout_constraintBottom_toTopOf="@+id/edtfirstname"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/edtfirstname" android:layout_marginTop="32dp"
+            app:layout_constraintTop_toBottomOf="@+id/txtRegistration" android:layout_marginStart="96dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="96dp"
+            android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="8dp"
+            app:layout_constraintHorizontal_bias="0.031" android:hint="Enter First name" android:autofillHints=""/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/edtlastname"
+            android:autofillHints="" android:layout_marginTop="32dp"
+            app:layout_constraintTop_toBottomOf="@+id/edtfirstname"
+            android:layout_marginEnd="96dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginRight="96dp"
+            android:hint="enter last name"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:inputType="phone"
+            android:ems="10"
+            android:id="@+id/edtPhoneNumber"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp" android:hint="Enter Phone Number"
+            android:layout_marginTop="32dp"
+            app:layout_constraintTop_toBottomOf="@+id/edtlastname" android:layout_marginBottom="32dp"
+            app:layout_constraintBottom_toTopOf="@+id/E" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/E"
+            android:hint="Enter E-mail" android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginRight="8dp" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginTop="35dp" app:layout_constraintTop_toBottomOf="@+id/edtPhoneNumber"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberPassword"
+            android:ems="10"
+            android:id="@+id/edtPassword"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp" android:hint="Enter Password" android:layout_marginTop="32dp"
+            app:layout_constraintTop_toBottomOf="@+id/E" android:layout_marginBottom="32dp"
+            app:layout_constraintBottom_toTopOf="@+id/edtConfirmPasswor"/>
+    <EditText
+            android:layout_width="224dp"
+            android:layout_height="49dp"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/edtConfirmPasswor" android:hint="Confirm Password" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="8dp" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/button"
+            app:layout_constraintTop_toBottomOf="@+id/edtPassword" android:layout_marginTop="32dp"/>
+    <Button
+            android:text="Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp" android:layout_marginTop="32dp"
+            app:layout_constraintTop_toBottomOf="@+id/edtConfirmPasswor" android:layout_marginBottom="32dp"
+            app:layout_constraintBottom_toTopOf="@+id/tvHello"/>
+    <ImageView
+            android:layout_width="58dp"
+            android:layout_height="51dp" app:srcCompat="@drawable/ic_person_black_24dp"
+            tools:layout_editor_absoluteY="109dp" android:id="@+id/imageView3"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toStartOf="@+id/edtfirstname"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+            app:layout_constraintHorizontal_bias="0.484"/>
+    <ImageView
+            android:layout_width="56dp"
+            android:layout_height="57dp" app:srcCompat="@drawable/ic_person_black_24dp"
+            tools:layout_editor_absoluteY="178dp" android:id="@+id/imageView4"
+            app:layout_constraintEnd_toStartOf="@+id/edtlastname" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp"/>
+    <ImageView
+            android:layout_width="51dp"
+            android:layout_height="48dp" app:srcCompat="@drawable/ic_phone_black_24dp"
+            tools:layout_editor_absoluteY="276dp" android:id="@+id/imageView11"
+            app:layout_constraintEnd_toStartOf="@+id/edtPhoneNumber" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp"/>
+    <ImageView
+            android:layout_width="61dp"
+            android:layout_height="67dp" app:srcCompat="@drawable/ic_https_black_24dp"
+            tools:layout_editor_absoluteY="415dp" android:id="@+id/imageView13"
+            tools:layout_editor_absoluteX="23dp"/>
+    <ImageView
+            android:layout_width="494dp"
+            android:layout_height="71dp" app:srcCompat="@drawable/ic_https_black_24dp"
+            tools:layout_editor_absoluteY="514dp" android:id="@+id/imageView14"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toStartOf="@+id/edtConfirmPasswor"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp"/>
+    <ImageView
+            android:layout_width="53dp"
+            android:layout_height="44dp" app:srcCompat="@drawable/ic_local_post_office_black_24dp"
+            tools:layout_editor_absoluteY="340dp" android:id="@+id/imageView15"
+            app:layout_constraintEnd_toStartOf="@+id/E" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp"/>
+
+</android.support.constraint.ConstraintLayout>
